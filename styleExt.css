@@ -1,0 +1,332 @@
+
+.collapsible {
+  
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    max-height:auto;
+    min-height: auto;
+  }
+      * {
+    box-sizing: border-box;
+  }
+      
+      .purp{
+      color: whitesmoke;
+      border: 2px solid black;
+      background-color: rgb(89, 51, 124);
+      }
+      .userdetail{
+  
+          color: rgb(187, 182, 182);
+          
+  
+  
+      }
+      h2{
+          color: black;
+      }
+  
+      hr{
+          color: rgb(83, 12, 83);
+          size: 2px;
+          
+      }
+  
+      button{
+          border-radius:35% ;
+          background-color: blueviolet;
+          color: antiquewhite;
+      }
+      .userInp, .input1{
+          float: left;
+          border: none; 
+          margin-left: 3%;
+      }
+      .userSelect{
+        margin-left: 3%;
+        float: left;
+      }
+      /* THIS IS FOR ICON IN USERDETAILS SECTION */
+      
+      .subformlinks{
+      color: whitesmoke;
+      max-width:95vw;
+      height: 40px;;
+      border: 1px solid rgb(129, 15, 163);
+      background-color: rgb(89, 51, 124);
+      text-align: left;
+      border-radius:1%;
+      align-items: center;
+      }
+   /* .btn-check{
+  
+      border-radius: 15%;
+   } */
+   .btn{
+      
+      border-radius: 34px;
+      margin-bottom: 2VW;
+      border: 1px solid #b79a9a;
+      color: #000;
+      background-color: white;
+      
+   }
+   
+  
+   input[type="radio"]{
+      /* background-color: rgb(99, 29, 99);
+      color:black; */
+      display: none;
+   }
+   h4{
+    
+    margin: auto;
+    margin-top: auto;
+  
+    float: left;
+    
+   }
+   /* this is for the change in color of selcted radio button */
+  
+   .btn-check:checked+.btn-secondary{
+    background-color: rgb(131, 71, 228);
+    border-color: rgb(10, 9, 10);
+    color: #f1f1f1;
+   }
+  /* THis is for the two radio buttons border radius change     : Segment  */
+   .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 15%;
+  
+   }
+  /* THis is for the border radius change     : Segment  */
+   .btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child) {
+  
+    border-radius: 15%;
+  }
+  .form-control {
+  
+  
+    width: 30%;
+  }
+  /* this is to make textbox and radio button on same line of  surface area  in general details dropdown*/
+  .btn-group, .btn-group-vertical {
+   
+    display: flex;
+  }
+  input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px;
+    line-height: normal;
+    display:none;
+  }
+  
+  .btn{
+    margin-top: 1vw;
+  }
+  .makeleft{
+    float: left;
+  }
+  textarea {
+      resize: none;
+  }
+  .form-label {
+      font-size: 12px;
+      color: #5e9bfc;
+      margin: 0;
+      display: block;
+      opacity: 1;
+      -webkit-transition: .333s ease top, .333s ease opacity;
+      transition: .333s ease top, .333s ease opacity;
+  }
+  .form-control {
+      border-radius: 0;
+      border-color: #ccc;
+         border-width: 0 0 2px 0;
+         border-style: none none solid none;
+         box-shadow: none;
+      float: left;
+      margin-left: 3%;
+  
+  }
+  .form-control:focus {
+      box-shadow: none;
+      border-color: #62246e;
+  }
+  .js-hide-label {
+      opacity: 0; 	
+  }
+  .js-unhighlight-label {
+      color: #999 
+  }
+  /* .card-img-overlay {
+    background-color: rgba(#000, 0.4);
+  } */
+  .my-image {height: 180px;width: 180px;object-fit: cover;}
+  
+  .card{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+  .card:hover{
+    border: 2px solid rgb(105, 26, 105);
+    
+    
+  }
+  .mainbox{
+  
+  display: flex;
+  justify-content: space-around;
+  align-item: center;
+  
+  }
+  .adj{
+    display: flex;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  
+  }
+  .box1{
+    background-color: #fffefe;
+    padding: 0;
+   
+    margin: 0;
+    color:purple;
+    padding-right: 55vw;
+    padding-left: 2vw;
+  }
+  .box1:hover{
+    background-color: purple;;
+    color: whitesmoke;
+  }
+  .box1::after{
+    background-color: yellow;
+  }
+  .box2{
+    background-color: #fffefe;
+    padding: 0;
+    padding-right: 25%;
+    margin: 0;
+    color:purple;
+   
+  }
+  .box2:hover{
+    background-color: purple;;
+    color: rgb(255, 251, 251);
+  }
+  .box2::after{
+    background-color: yellow;
+  }
+/* .hidecont{
+  display: none;
+
+}   */
+#firstbox{
+  margin-bottom: 0;
+  display: none;
+} 
+
+.Hmargin{
+ float: left;
+}
+
+.op{
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+
+
+
+}
+
+#op{
+
+  display: flex;
+  
+  
+  }
+
+  .butshow{
+
+    border: 0px solid #876d6d;
+    border-width: fitcontent;
+    margin: inherit;
+    
+    width: -webkit-fill-available;
+    display: flex;
+    height: -webkit-fill-available;
+    align-items: center;
+  }
+
+  /* here below i am trying to get color code isntead of image */
+
+  .colorbox{
+
+    background-color: #62246e;
+    color:black;
+    height: 5%;
+
+
+  }
+  #searchInputRAL{
+
+    margin-top: -5%;
+    
+
+
+  }
+
+  .spancolor{
+    margin-bottom: 0%;
+  }
+  .onlycard{
+    /* background-color: #c02929; */
+  
+    display:flex;
+    height: 6%;
+    display: flex;
+    margin: 0;
+
+  }
+  .modaltitle{
+    display: flex;
+    display:flex;align-items: center;display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse; color: whitesmoke;
+  }
+  .close{
+    float: left;
+    
+    margin-left: -35%;
+  }
+
+  .mySelect{
+    width: 30%;
+    height: 6%;
+    color: #62246e;
+    font-size:18px ;
+  }
+  

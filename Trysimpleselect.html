@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SIMPLE</title>
+    <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleExt.css">
+    <link rel="stylesheet" href="try.js">
+    <link rel="stylesheet" 
+    href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script> function text(x){
+        if (x == 0) document.getElementById('AP').style.display="none",
+        
+        document.getElementById('OP').style.display="block",
+
+
+        console.log("here x=0")
+       
+        else document.getElementById('OP').style.display="none",
+        document.getElementById('OP').style.height="none",
+        document.getElementById('AP').style.display="block",
+        console.log("here x=1")
+       
+        
+        return;
+         }
+         
+         function HideSelectRalOrProd(x){
+        if (x == 0) document.getElementById('SelectRal').style.display="none",
+        
+        document.getElementById('SelectProd').style.display="block",
+
+
+        console.log("here x=0")
+       
+        else document.getElementById('SelectProd').style.display="none",
+        document.getElementById('SelectProd').style.height="none",
+        document.getElementById('SelectRal').style.display="block",
+        console.log("here x=1")
+       
+        
+        return;
+         }
+         
+         </script>
+
+    
+
+</head>
+
+<body>
+
+    <center>
+    <div class="purp">
+
+        <h1>Specification Tool</h1>
+
+
+    </div>
+    <div class="userdetail">
+
+      
+        <BR>
+
+    <form>
+      <H2 >User Detail</H2>
+        <span class="userInp"> Username: </span>
+        <br>
+
+        <input type="text" class="form-control" id="name" name="name"  tabindex="1" required>
+
+       
+            
+        <br>
+        <br>
+
+            <span class="userInp"> Email:</span>
+        <br>
+
+        <input type="text" class="form-control" id="name" name="Email"  tabindex="1" required>
+
+        <br>
+       
+            <br>
+            <span class="userInp"> Contact no(e.g 1234567890)</span>
+        <br>
+
+        <input type="text" class="form-control" id="name" name="Contact"  tabindex="1" required>
+        <br>
+        
+          <br>
+          <span class="userInp">Project Title(Optional)</span>
+      <br>
+      <input type="text" class="form-control" id="Title" name="Title"  tabindex="1" required>
+      <br>
+      
+
+        <br>
+       
+         <br>
+          
+    <div class="form-group">
+      
+      <div class="input-icons">
+        <i class="fa fa-user icon"></i>
+
+   
+
+      <input type="text" class="mySelect  userSelect" id="mySelectUserD" readonly placeholder="Click to open options">
+    
+    </div>
+
+  </div>
+
+
+  <!-- Modal with options 2 -->
+
+  <div class="modal fade" id="optionsModalUserD">
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header" style="background-color:#782ebd;display:flex;align-items: center;display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse; color: whitesmoke;">
+
+          <h4 class="modal-title">Select User Type</h4>
+
+          <button type="button" class="close" data-dismiss="modal" style="color:whitesmoke;">Cancel</button>
+
+        </div>
+
+        <div class="modal-body">
+
+
+          <div id="optionsListUserD">
+
+            <div class="card" data-option="Architec">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Architec</h5>
+                <hr>
+
+            
+
+            </div>
+            </div>
+
+            <div class="card" data-option="Coater">
+
+              
+
+              <div class="card-body">
+
+                <h5 class="card-title">Coater</h5>
+
+<hr>
+              </div>
+
+            </div>
+
+            <div class="card" data-option="Project MANAGER ">
+
+
+              <div class="card-body">
+
+                <h5 class="card-title">Project Manager</h5>
+                <hr>
+
+             
+
+              </div>
+              </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+          <br><br>
+
+        <BUTTON type="submit">SAVE</BUTTON>
+
+
+
+
+
+    </form>
+</div>
+<br>
+<!-- 
+<div class="boxes"> -->
+
+    <div class="container">
+        <div class="row">
+          
+          <br>
+
+          <!-- <div class="col-sm"><div class="mainbox subformlinks"><button id="show" onclick="hide()">Create Specification</button><button onclick="show()">Get Specification from existing Specification</button></div></div> -->
+<br>
+<div class="col-sm"><div class="mainbox subformlinks"><ul id="hidebt" class="butshow" onclick="hide()">Create Specification</ul><ul  id="showbt"  class="butshow" onclick="show()" style="background-color:white;color:purple">Get Specification from existing Specification</ul></div></div>
+
+        
+          <!-- <div class="col-sm"><div class="mainbox"></div><div class="box1"><h3 class="subformlinks">Create Specification</h3></div><div class="box2"><h3 class="subformlinks">Get Specification from existing Specification</h3></div></div> -->
+          <!-- <div class="col-sm collapsible"><h3 class="subformlinks" id="hidecont">Hide and show</h3></div> -->
+          <br>
+          <div class="col-sm collapsible"><h3 class="subformlinks" id="firstbox">Product type and reason for change</h3></div>
+            <div class="content">
+              <br>
+              <form action="">
+
+            <h4>Product Types</h4>
+            <br>
+
+            <div class="btn-group">
+              <input type="radio" class="btn-check" name="ProdType" id="OtherProd" autocomplete="off" checked onclick="text(0)"/>
+              <label class="btn btn-secondary" for="OtherProd">Other Product</label>
+            
+              <input type="radio" class="btn-check" name="ProdType" id="AkzoProd" autocomplete="off" onclick="text(1)" />
+              <label class="btn btn-secondary" for="AkzoProd">AkzoNobel Products</label>
+          </div>
+
+          <div id="OP">
+          <label>Enter Product</label>
+          <input type="text" id="EntProd" name="EntProd" placeholder="Enter Product name">
+            </div>
+          <br>
+          <br>
+          <!-- this will be shown after the AkzoNobel Product option is selected -->
+
+            <div id="AP" style="display:none" >
+          <label>AkzoNobel Product</label>
+          <input type="text" id="EntProd" name="EntProd" placeholder="Enter Product name">
+        
+        
+          <!-- the below was mopdal option and select -->
+
+          <div class="form-group">
+           
+        <!--Select tag for existing product  -->
+
+
+
+
+  
+      <div class="op">
+  
+        <label for="mySelectExis">Select an option:</label>
+  
+        <input type="text" class="form-control mySelect" id="mySelectExis" readonly placeholder="Click to open options">
+  
+    </div>
+
+<!-- modal for existing -->
+
+<div class="modal fade" id="optionsModalExis">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title">Select an option</h4>
+
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <input type="text" id="searchInputExis" class="form-control" placeholder="Search options">
+
+        <div id="optionsListExis">
+
+          <div class="card" data-option="Option kb">
+
+            <img src="imageX.jpg" class="card-img-top" alt="Option kb">
+
+            <div class="card-body">
+
+              <h5 class="card-title">Option kb</h5>
+
+              <p class="card-text">Description of Option X</p>
+
+            </div>
+
+          </div>
+
+          <div class="card" data-option="Option Ya">
+
+            <img src="imageY.jpg" class="card-img-top" alt="Option Ya">
+
+            <div class="card-body">
+
+              <h5 class="card-title">Option Ya</h5>
+
+              <p class="card-text">Description of Option Y</p>
+
+            </div>
+
+          </div>
+
+          <div class="card" data-option="Option Za">
+
+            <img src="imageZ.jpg" class="card-img-top" alt="Option Za">
+
+            <div class="card-body">
+
+              <h5 class="card-title">Option Za</h5>
+
+              <p class="card-text">Description of Option Z</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</div>
+        </div>
+          <!-- THis is the modal for reason for change -->
+          <!-- Select Button -->
+            </div>
+   <!-- Options Modal -->
+   <!-- <div class="modal fade" id="optionsModal2" tabindex="-1" role="dialog" aria-labelledby="optionsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="optionsModalLabel2">Select an option:</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+       </button>
+      </div> -->
+      <!-- <div class="modal-body">
+       
+        <div class="card"  data-option="ProductNotAvailable">
+         
+          <h5 class="card-title">Product not available</h5>
+
+         
+        </div>
+        <div class="card" data-option="ChangeTheTechnology">
+         
+          <h5 class="card-title">Change the Technology</h5>
+          </div>
+          <div class="card" data-option="LookingForAnotherProduct">
+         
+            <h5 class="card-title">Looking For Another Product</h5>
+            </div>
+            <div class="card" data-option="Other">
+         
+              <h5 class="card-title">Other</h5>
+              </div>
+
+
+                                          -        
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-dismiss="modal2">Close</button> -->
+   
+       <body>
+        <label for="tutorial_choice">Reason for change: </label>
+      
+        <select class="form-select">
+          <option value="ProductNotAvailable">Product not available</option>
+          <option value="ChangeTheTechnology">Change The Technology</option>
+          <option value="LookingForAnotherProduct">Looking For AnotherProduct</option>
+          <option value="Other">Other</option>
+        </select>
+      </body>
+
+        
+
+                </form>
+                </div>
+                
+                
+
+          <br>
+    
+            <div class="col-sm collapsible"><h3 id=generalD class="subformlinks" style="margin-top: 0%;">1. General Details</h3></div>
+            <div class="content">
+              <br>
+              <form action="">
+
+<h4>Your Location</H4>  
+  <br>  
+<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+<label class="btn btn-secondary btn-outline-success" for="option1">Canada</label>
+
+<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+<label class="btn btn-secondary btn-outline-success" for="option2">North Asia</label>
+
+<input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+<label class="btn btn-secondary btn-outline-success" for="option3">North Europe</label>
+
+<input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+<label class="btn btn-secondary" for="option4">USA</label>
+<input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+<label class="btn btn-secondary" for="option5">South East Asia</label>
+<input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+<label class="btn btn-secondary" for="option6">Maxico</label>
+
+<br>
+<br>
+<h4>Project Location</H4>  
+  <br>  
+  <input type="radio" class="btn-check" name="optionP" id="optionP1" autocomplete="off" checked>
+  <label class="btn btn-secondary btn-outline-success" for="optionP1">Canada</label>
+  
+  <input type="radio" class="btn-check" name="optionP" id="optionP2" autocomplete="off">
+  <label class="btn btn-secondary btn-outline-success" for="optionP2">North Asia</label>
+  
+  <input type="radio" class="btn-check" name="optionP" id="optionP3" autocomplete="off">
+  <label class="btn btn-secondary btn-outline-success" for="optionP3">North Europe</label>
+  
+  <input type="radio" class="btn-check" name="optionP" id="optionP4" autocomplete="off">
+  <label class="btn btn-secondary" for="optionP4">USA</label>
+  <input type="radio" class="btn-check" name="optionP" id="optionP5" autocomplete="off">
+  <label class="btn btn-secondary" for="optionP5">South East Asia</label>
+  <input type="radio" class="btn-check" name="optionP" id="optionP6" autocomplete="off">
+  <label class="btn btn-secondary" for="optionP6">Maxico</label>
+  
+  <br>
+  <br>
+  <div class="form-group">
+    <label for="City">City(Optional)</label>
+    <input type="text" class="form-control" id="City">
+    <label for="State">State(Optional)</label>
+    <input type="text" class="form-control" id="State">
+  </div>
+  <br>
+  <br>
+  <h4>Segments</h4>
+  <br>
+
+  <div class="btn-group">
+    <input type="radio" class="btn-check" name="Segment" id="EXTRUCTION" autocomplete="off" checked />
+    <label class="btn btn-secondary" for="EXTRUCTION">EXTRUCTION</label>
+  
+    <input type="radio" class="btn-check" name="Segment" id="COIL" autocomplete="off" />
+    <label class="btn btn-secondary" for="COIL">COIL</label>
+</div>
+<br><br>
+
+  <H4>Architectrual Phase(Optional)</H4>
+  <br>
+
+  <input type="radio" class="btn-check" name="ArchitectrualP" id="AP1" autocomplete="off" checked>
+  <label class="btn btn-secondary btn-outline-success" for="AP1">Schematic</label>
+  
+  <input type="radio" class="btn-check" name="ArchitectrualP" id="AP2" autocomplete="off">
+  <label class="btn btn-secondary btn-outline-success" for="AP2">Desgin & Development</label>
+  
+  <input type="radio" class="btn-check" name="ArchitectrualP" id="AP3" autocomplete="off">
+  <label class="btn btn-secondary btn-outline-success" for="AP3">Construction Development</label>
+
+  <br><br>
+  
+
+
+<H4>Coated Surface area(Optional)</H4>
+<br>
+
+<div class="btn-group">
+  <input type="text" class="form-control" id="SurfaceArea"> &nbsp;
+  <input type="radio" class="btn-check" name="dist" id="fts" autocomplete="off" checked />
+  <label class="btn btn-secondary" for="fts">Sq.fts</label>
+
+  <input type="radio" class="btn-check" name="dist" id="mts" autocomplete="off" />
+  <label class="btn btn-secondary" for="mts">Sq.mts</label>
+  </div>
+  <BUTTON type="submit">SAVE and Next</BUTTON>
+</form>
+        
+        </div> 
+        
+         
+
+
+
+
+          <!-- NEXT BLOCK DROPDOWN BEGINS HERE -->
+            
+               
+           
+                <div class="col-sm collapsible"><h3 class="subformlinks">2. Surfaces</h3></div>
+                <div class="content">
+                  <form action="">
+                    <H4>Area of Use</H4>
+                    <br>
+                    <br>
+                    <div class="btn-group">
+                      <input type="radio" class="btn-check" name="Area" id="Ext" autocomplete="off" checked />
+                      <label class="btn btn-secondary" for="Ext">Exterior</label>
+                    
+                      <input type="radio" class="btn-check" name="Area" id="Int" autocomplete="off" />
+                      <label class="btn btn-secondary" for="Int">Interior</label>
+                    </div>
+                    <br>
+
+                    <br>
+                    <h4>Material Type</h4>
+                    <br>
+                    <input type="radio" class="btn-check makeleft" name="Material" id="Alu" />
+  <label class="btn btn-secondary" for="Alu">Aluminium</label>
+  <br>
+  <br>
+  <BUTTON type="submit">SAVE and Next</BUTTON>
+  <br>
+
+                  </form>
+                  <br>
+               
+                </div>
+                    <div class="col-sm collapsible"><h3 class="subformlinks">3. Product features</h3></div>
+                    <div class="content">
+<form>
+
+<h3>Specifications</h3>
+<input type="radio" class="btn-check" name="Specifications" id="2605" autocomplete="off" checked>
+<label class="btn btn-secondary btn-outline-success" for="2605">AAMA 2605</label>
+
+<input type="radio" class="btn-check" name="Specifications" id="2604" autocomplete="off">
+<label class="btn btn-secondary btn-outline-success" for="2604">AAMA 2604</label>
+
+<input type="radio" class="btn-check" name="Specifications" id="2603" autocomplete="off">
+<label class="btn btn-secondary btn-outline-success" for="2603">AAMA 2603</label>
+
+<br>
+<H4>Technology</H4>
+<br>
+
+<input type="radio" class="btn-check makeleft" name="Technology" id="PVDF"/>
+  <label class="btn btn-secondary" for="PVDF">PVDF</label>
+  <br>
+<br>
+<h4>Select Product (or) RAL Colour</h4>
+<br>
+<br>
+<div class="btn-group">
+  <input type="radio" class="btn-check" name="Color" id="Products" autocomplete="off" checked   onclick="HideSelectRalOrProd(0)"/>
+  <label class="btn btn-secondary" for="Products">Products</label>
+
+  <input type="radio" class="btn-check" name="Color" id="Ral" autocomplete="off" onclick="HideSelectRalOrProd(1)"/>
+  <label class="btn btn-secondary" for="Ral">RAL Colours</label>
+</div>
+<br>
+<div id="SelectProd">
+
+  <div class="form-group">
+
+    <label for="mySelect1">Select an option:</label>
+
+    <input type="text" class="form-control mySelect" id="mySelect1" readonly placeholder="Click to open options">
+
+  </div>
+
+</div>
+
+
+<!-- Modal with options 1 -->
+
+<div class="modal fade" id="optionsModal1">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title">Select an option</h4>
+
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <input type="text" id="searchInput1" class="form-control" placeholder="Search options">
+
+        <div id="optionsList1">
+          <div class="card-deck">
+          <div class="card" data-option="Option A">
+
+            <img src="https://tse2.mm.bing.net/th/id/OIP.UyYyWTuW4pdDMWjQ4C5WGAHaE7?pid=ImgDet&rs=1" class="card-img-top" alt="Option A">
+
+            <div class="card-body">
+
+              <h5 class="card-title">Option A</h5>
+
+              <p class="card-text">Description of Option A</p>
+
+            </div>
+</div>
+          </div>
+
+          <div class="card" data-option="Option B">
+
+            <img src="https://tse2.mm.bing.net/th/id/OIP.UyYyWTuW4pdDMWjQ4C5WGAHaE7?pid=ImgDet&rs=2" class="card-img-top" alt="Option B">
+
+            <div class="card-body">
+
+              <h5 class="card-title">Option B</h5>
+
+              <p class="card-text">Description of Option B</p>
+
+            </div>
+
+          </div>
+
+          <div class="card" data-option="Option C">
+
+            <img src="https://tse2.mm.bing.net/th/id/OIP.UyYyWTuW4pdDMWjQ4C5WGAHaE7?pid=ImgDet&rs=2" class="card-img-top" alt="Option C">
+
+            <div class="card-body">
+
+              <h5 class="card-title">Option C</h5>
+
+              <p class="card-text">Description of Option C</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<div id="SelectRal"style="display: none;">
+    <!--  here i am trying to make the ral color box -->
+
+
+  <div class="container">
+
+    <h2>Bootstrap Select with Modal Options and Search RAL</h2>
+
+    <div class="form-group">
+
+      <label for="mySelectRal">Select an option:</label>
+
+      <input type="text" class="form-control mySelectRAL" id="mySelectRAL" readonly placeholder="Click to open options">
+
+    </div>
+
+  </div>
+
+
+  <!-- Modal with options 1 -->
+
+  <div class="modal fade" id="optionsModalRAL">
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h4 class="modal-title">Select an option</h4>
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+
+        <div class="modal-body">
+          <br>
+
+          <input type="text" id="searchInputRAL" class="form-control" placeholder="Search options"><br>
+
+          <div id="optionsListRAL">
+          
+
+
+            <div class="card onlycard" style="background-color: rgb(241, 245, 29);height: 6%;"data-option="Option A">
+
+              
+              <div class="card-body">
+
+                <h5 class="card-title">Option A</h5>
+
+                
+
+              
+            </div>
+            </div>
+            <!-- <div class="colorbox" style="background-color: blue;"> -->
+
+            <div class="card onlycard" style="background-color: blue;height: 6%;" data-option="Option B">
+
+             
+
+              <div class="card-body">
+
+                <h5 class="card-title spancolor";">Option B</h5>
+
+                
+
+              </div>
+
+            </div>
+
+            
+
+            <div class="card onlycard"style="background-color: GREEN;height: 6%;" data-option="Option C">
+
+              
+
+              <div class="card-body">
+
+                <h5 class="card-title h5card">Option C</h5>
+
+              
+
+              </div>
+            
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+<br>
+<BUTTON type="submit">SAVE and Next</BUTTON>
+
+<!-- <div class="btn-group">
+  
+
+  <input type="radio" class="btn-check" name="ProductsOrRal" id="Products" autocomplete="off" checked />
+  <label class="btn btn-secondary" for="Products">Products</label>
+
+  <input type="radio" class="btn-check" name="ProductsOrRal" id="RALColours" autocomplete="off" />
+  <label class="btn btn-secondary" for="RALColors">RALColours</label>
+  </div>
+  <input type="text" class="form-control" id="ProductsOrRalColor"> 
+  <br> -->
+
+
+
+</form>
+
+                    </div>
+                        <div class="col-sm collapsible"><h3 class="subformlinks">4. Select Product/system</h3></div>
+                        <div class="content">
+                        
+                          
+                              <input type="radio" class="btn-check" name="Color" id="P" autocomplete="off"  />
+                              <label class="btn btn-secondary" for="P">  <div class="card" style="width: 18rem;">
+                                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1fRvOh.img?w=612&h=304&q=90&m=6&f=jpg&u=t" class="card-img-top my-image" alt="...">
+                                <div class="card-img-overlay text-white">
+    
+    
+                                   
+                                
+                                  
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-text">sdkjhfhjsdgj</h6>
+                                
+                                <a href="#" class="btn btn-primary">View</a>
+                                </div>
+                                </div></label>
+                                <input type="radio" class="btn-check" name="Color" id="C" autocomplete="off"  />
+                                <label class="btn btn-secondary" for="C">  <div class="card" style="width: 18rem;">
+                                  <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1fRvOh.img?w=612&h=304&q=90&m=6&f=jpg&u=t" class="card-img-top my-image" alt="...">
+                                  <div class="card-img-overlay text-white">
+      
+      
+                                     
+                                  
+                                    
+                                  <h5 class="card-title">Card title</h5>
+                                  <h6 class="card-text">sdkjhfhjsdgj</h6>
+                                  
+                                  <a href="#" class="btn btn-primary">View</a>
+                                  </div>
+                                  </div></label>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        </div>
+                      </span>
+                      </label>
+                            <div class="col-sm"><h3 class="subformlinks" data-toggle="modal" data-target="#myModal">Generate features(.pdf)</h3></div>
+
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" d="myModal" role="dialog">...</div>
+                             <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title "data-dismiss="modal">Cancel</h4>
+        </div>
+        <div class="modal-body">
+          <h3>AkzoNobel Coil Extrusion Coatig</h3>
+          <br>
+          <hr>
+          <br>
+          <H2>Coating Specification</H2>
+          <br>
+          <hr>
+          <h5>project title</h5>
+          <h5>Contact number</h5>
+          <h5>Email</h5>
+<br>
+          <h5>Prepeared by </h5>
+          <h5>Prepeared on</h5>
+          <p>Some text in the modal.</p>
+          <hr>
+
+          <h4>Part 1 General</h4>
+          <br>
+
+          <span>1.1 Section Includes</span>
+         <span> A. Coater applied coatings for initerior/Exterior,Aluminium & Steel,Building components:</span>
+          <BR>
+            <ul style="list-style-type:disc;"></ul>
+          <li>Building components</li>
+          <li>Area of Use:
+      </li>    <li>Segments:
+         </li> <li>Building Parts:
+   </li>       <li>Material Type:
+    </li>      <li>Specification:
+    </li>      <li>Technology:
+       </li>   <li>Colour Code:
+      </li>    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <br>
+
+
+
+
+
+</div>
+
+
+
+
+
+<script>
+
+   
+   // this is modal select and search for ral corlor:
+
+ // this for ral product
+
+     // Select tag 2
+
+     $('#mySelectRAL').on('click', function() {
+
+$('#optionsModalRAL').modal('show');
+
+});
+
+
+// Select an option when a card is clicked for select tag ral
+
+$('#optionsModalRAL').on('click', '.card', function() {
+
+var option = $(this).data('option');
+
+$('#mySelectRAL').val(option);
+
+$('#optionsModalRAL').modal('hide');
+
+});
+
+
+// Search options in modal ral
+
+$('#searchInputRAL').on('input', function() {
+
+var value = $(this).val().toLowerCase();
+
+$('#optionsListRAL .card').filter(function() {
+
+  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+});
+
+});
+
+
+//////////////////////////////////////
+    // this for existing product
+
+     // Select tag 2
+
+     $('#mySelectExis').on('click', function() {
+
+$('#optionsModalExis').modal('show');
+
+});
+
+
+// Select an option when a card is clicked for select tag exis
+
+$('#optionsModalExis').on('click', '.card', function() {
+
+var option = $(this).data('option');
+
+$('#mySelectExis').val(option);
+
+$('#optionsModalExis').modal('hide');
+
+});
+
+
+// Search options in modal exis
+
+$('#searchInputExis').on('input', function() {
+
+var value = $(this).val().toLowerCase();
+
+$('#optionsListExis .card').filter(function() {
+
+  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+});
+
+});
+
+
+    // this functions hides the purple bar on main page 
+    function hide(){
+        console.log("this is show button clicked")
+        // document.getElementById('firstbox').style.height="80px"
+        document.getElementById('')
+        document.getElementById('firstbox').style.display="none"
+        document.getElementById('firstbox').style.margin="0%"
+        document.getElementById('generalD').style.marginTop="0%"
+        console.log("this is  button clicked")
+        document.getElementById('showbt').style.color="purple"
+        document.getElementById('showbt').style.backgroundColor="white"
+        document.getElementById('hidebt').style.color="WHITESMOKE"
+        document.getElementById('hidebt').style.backgroundColor="#59337C"
+    }
+
+        
+    
+    function show(){
+        // document.getElementById('firstbox').style.height="180px"
+        document.getElementById("firstbox").style.display="block";
+        console.log("this is hidw wirtten after gettung elementbyid")
+        document.getElementById('hidebt').style.color="purple"
+        document.getElementById('hidebt').style.backgroundColor="white"
+        document.getElementById('showbt').style.color="WHITESMOKE"
+        document.getElementById('showbt').style.backgroundColor="#59337C"
+        
+
+
+
+
+    }
+    
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "2px";
+        } 
+      });
+    }
+
+
+    // thie below code script is for modal option selcet
+    $('.card').click(function() {
+     var selectedOptionImgCard = $(this).data('option');
+     if (selectedOptionImgCard != '') {
+      $('#selectedOption').text(selectedOptionImgCard);
+      $('#optionsModal').modal('hide');
+     }
+    });
+    //     // Update selected option on card click
+    //     $('.card').click(function() {
+    //  var selectedOption = $(this).data('option');
+    //  if (selectedOption != '') {
+    //   $('#selectedOption2').text(selectedOption);
+    //   $('#optionsModal2').modal('hide');
+    //  }
+    // });
+
+
+    
+
+    // THIS IS SCRIPT FOR MODAL WITH SEARCCH  in produt features block
+
+    
+    // Select tag 1
+
+    $('#mySelect1').on('click', function() {
+
+$('#optionsModal1').modal('show');
+
+});
+
+
+// Select an option when a card is clicked for select tag 1
+
+$('#optionsModal1').on('click', '.card', function() {
+
+var option = $(this).data('option');
+
+$('#mySelect1').val(option);
+
+$('#optionsModal1').modal('hide');
+
+});
+
+
+// Search options in modal 1
+
+$('#searchInput1').on('input', function() {
+
+var value = $(this).val().toLowerCase();
+
+$('#optionsList1 .card').filter(function() {
+
+  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+});
+
+});
+
+
+// Select tag 2
+
+$('#mySelect2').on('click', function() {
+
+$('#optionsModal2').modal('show');
+
+});
+
+
+// Select an option when a card is clicked for select tag 2
+
+$('#optionsModal2').on('click', '.card', function() {
+
+var option = $(this).data('option');
+
+$('#mySelect2').val(option);
+
+$('#optionsModal2').modal('hide');
+
+});
+
+
+// Search options in modal 2
+
+$('#searchInput2').on('input', function() {
+
+var value = $(this).val().toLowerCase();
+
+$('#optionsList2 .card').filter(function() {
+
+  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+});
+
+});
+
+
+
+// this for existing product
+
+     // Select tag 2
+
+     $('#mySelectExis').on('click', function() {
+
+$('#optionsModalExis').modal('show');
+
+});
+
+
+// Select an option when a card is clicked for select tag exis
+
+$('#optionsModalExis').on('click', '.card', function() {
+
+var option = $(this).data('option');
+
+$('#mySelectExis').val(option);
+
+$('#optionsModalExis').modal('hide');
+
+});
+
+
+// Search options in modal exis
+
+$('#searchInputExis').on('input', function() {
+
+var value = $(this).val().toLowerCase();
+
+$('#optionsListExis .card').filter(function() {
+
+  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+});
+
+});
+
+// ///////User Details select box
+
+$('#mySelectUserD').on('click', function() {
+
+$('#optionsModalUserD').modal('show');
+
+});
+
+
+// Select an option when a card is clicked for select tag 2
+
+$('#optionsModalUserD').on('click', '.card', function() {
+
+var option = $(this).data('option');
+
+$('#mySelectUserD').val(option);
+
+$('#optionsModalUserD').modal('hide');
+
+});
+
+
+
+
+    </script>
+    
+
+
+
+</center>
+</body>
+
+
+</html
