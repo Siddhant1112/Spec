@@ -1,0 +1,480 @@
+<html>
+
+
+
+<head>
+    <title>SIMPLE</title>
+    <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleExt.css">
+    <link rel="stylesheet" href="try.js">
+
+      <link rel="stylesheet" 
+            href=
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    
+
+</head>
+
+<body>
+wd  
+
+<!--################################################################## -->
+  <!-- Select tag 1 -->
+
+  <div class="container">
+
+    <h2>Bootstrap Select with Modal Options and Search 1</h2>
+
+    <div class="form-group">
+
+      <label for="mySelect1">Select an option:</label>
+
+      <input type="text" class="form-control mySelect" id="mySelect1" readonly placeholder="Click to open options">
+
+    </div>
+
+  </div>
+
+
+  <!-- Modal with options 1 -->
+
+  <div class="modal fade" id="optionsModal1">
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h4 class="modal-title">Select an option</h4>
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+
+        <div class="modal-body">
+
+          <input type="text" id="searchInput1" class="form-control" placeholder="Search options">
+
+          <div id="optionsList1">
+
+            <div class="card" data-option="Option A">
+
+              <img src="imageA.jpg" class="card-img-top" alt="Option A">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Option A</h5>
+
+                <p class="card-text">Description of Option A</p>
+
+              </div>
+
+            </div>
+
+            <div class="card" data-option="Option B">
+
+              <img src="imageB.jpg" class="card-img-top" alt="Option B">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Option B</h5>
+
+                <p class="card-text">Description of Option B</p>
+
+              </div>
+
+            </div>
+
+            <div class="card" data-option="Option C">
+
+              <img src="imageC.jpg" class="card-img-top" alt="Option C">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Option C</h5>
+
+                <p class="card-text">Description of Option C</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Select tag 2 -->
+
+  <div class="container">
+
+    <h2>Bootstrap Select with Modal Options and Search 2</h2>
+
+    <div class="form-group">
+      <div class="input-icons">
+        <i class="fa fa-user icon"></i>
+
+   
+
+      <input type="text" class="mySelect custom-select-lg" id="mySelectUserD" readonly placeholder="Click to open options">
+    
+    </div>
+
+  </div>
+
+
+  <!-- Modal with options 2 -->
+
+  <div class="modal fade" id="optionsModalUserD">
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header" style="background-color:#782ebd;display:flex;align-items: center;display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse; color: whitesmoke;">
+
+          <h4 class="modal-title">Select User Type</h4>
+
+          <button type="button" class="close" data-dismiss="modal" style="color:whitesmoke;">Cancel</button>
+
+        </div>
+
+        <div class="modal-body">
+
+
+          <div id="optionsListUserD">
+
+            <div class="card" data-option="Architec">
+
+              <div class="card-body">
+
+                <h5 class="card-title">Architec</h5>
+                <hr>
+
+            
+
+            </div>
+            </div>
+
+            <div class="card" data-option="Coater">
+
+              
+
+              <div class="card-body">
+
+                <h5 class="card-title">Coater</h5>
+
+<hr>
+              </div>
+
+            </div>
+
+            <div class="card" data-option="Project MANAGER ">
+
+
+              <div class="card-body">
+
+                <h5 class="card-title">Project Manager</h5>
+                <hr>
+
+             
+
+              </div>
+              </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="col-sm"><div class="mainbox subformlinks"><ul id="show" onclick="hide()">Create Specification</ul><ul onclick="show()">Get Specification from existing Specification</ul></div></div>
+  <br>
+
+
+
+  <!--  here i am trying to make the ral color box -->
+
+
+  <div class="container">
+
+    <h2>Bootstrap Select with Modal Options and Search RAL</h2>
+
+    <div class="form-group">
+
+      <label for="mySelectRal">Select an option:</label>
+
+      <input type="text" class="form-control mySelectRAL" id="mySelectRAL" readonly placeholder="Click to open options">
+
+    </div>
+
+  </div>
+
+
+  <!-- Modal with options 1 -->
+
+  <div class="modal fade" id="optionsModalRAL">
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h4 class="modal-title">Select an option</h4>
+
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+
+        <div class="modal-body">
+          <br>
+
+          <input type="text" id="searchInputRAL" class="form-control" placeholder="Search options"><br>
+
+          <div id="optionsListRAL">
+          
+
+
+            <div class="card onlycard"style="background-color: orange;height: 6%;" data-option="Option A">
+
+              
+              <div class="card-body">
+
+                <h5 class="card-title">Option A</h5>
+
+                
+
+              
+            </div>
+            </div>
+            <!-- <div class="colorbox" style="background-color: blue;"> -->
+
+            <div class="card onlycard" style="background-color: blue;height: 6%;" data-option="Option B">
+
+             
+
+              <div class="card-body">
+
+                <h5 class="card-title spancolor";">Option B</h5>
+
+                
+
+              </div>
+
+            </div></div>
+
+            
+
+            <div class="card onlycard"style="background-color: green;height: 6%;" data-option="Option C">
+
+              
+
+              <div class="card-body">
+
+                <h5 class="card-title h5card">Option C</h5>
+
+              
+
+              </div>
+            
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+          
+
+  <script>
+// this is modal select and search for ral corlor:
+
+ // this for ral product
+
+     // Select tag 2
+
+     $('#mySelectRAL').on('click', function() {
+
+$('#optionsModalRAL').modal('show');
+
+});
+
+
+// Select an option when a card is clicked for select tag ral
+
+$('#optionsModalRAL').on('click', '.card', function() {
+
+var option = $(this).data('option');
+
+$('#mySelectRAL').val(option);
+
+$('#optionsModalRAL').modal('hide');
+
+});
+
+
+// Search options in modal ral
+
+$('#searchInputRAL').on('input', function() {
+
+var value = $(this).val().toLowerCase();
+
+$('#optionsListRAL .card').filter(function() {
+
+  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+});
+
+});
+
+
+//////////////////////////////////////
+    // this for existing product
+
+     // Select tag exis
+
+     $('#mySelectExis').on('click', function() {
+
+$('#optionsModalExis').modal('show');
+
+});
+
+
+// Select an option when a card is clicked for select tag exis
+
+$('#optionsModalExis').on('click', '.card', function() {
+
+var option = $(this).data('option');
+
+$('#mySelectExis').val(option);
+
+$('#optionsModalExis').modal('hide');
+
+});
+
+
+// Search options in modal exis
+
+$('#searchInputExis').on('input', function() {
+
+var value = $(this).val().toLowerCase();
+
+$('#optionsListExis .card').filter(function() {
+
+  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+});
+
+});
+
+    // ///////////////////////////////////////////////////////
+
+    // Select tag 1
+
+    $('#mySelect1').on('click', function() {
+
+      $('#optionsModal1').modal('show');
+
+    });
+
+
+    // Select an option when a card is clicked for select tag 1
+
+    $('#optionsModal1').on('click', '.card', function() {
+
+      var option = $(this).data('option');
+
+      $('#mySelect1').val(option);
+
+      $('#optionsModal1').modal('hide');
+
+    });
+
+
+    // Search options in modal 1
+
+    $('#searchInput1').on('input', function() {
+
+      var value = $(this).val().toLowerCase();
+
+      $('#optionsList1 .card').filter(function() {
+
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+      });
+
+    });
+
+
+    // Select tag 2
+
+    $('#mySelectUserD').on('click', function() {
+
+      $('#optionsModalUserD').modal('show');
+
+    });
+
+
+    // Select an option when a card is clicked for select tag 2
+
+    $('#optionsModalUserD').on('click', '.card', function() {
+
+      var option = $(this).data('option');
+
+      $('#mySelectUserD').val(option);
+
+      $('#optionsModalUserD').modal('hide');
+
+    });
+
+
+    // Search options in modal 2
+
+    $('#searchInput2').on('input', function() {
+
+      var value = $(this).val().toLowerCase();
+
+      $('#optionsList2 .card').filter(function() {
+
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+      });
+
+    });
+
+  </script>
+
+
+</body>
+
+   
+</html>
